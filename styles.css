@@ -1,0 +1,209 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', Arial, sans-serif; 
+}
+
+.container {
+    height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    margin: 20vh auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.boton {
+    border-radius: 25px;
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.campoform {
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.textoenlaces {
+    color: #6c757d;
+    font-size: 14px;
+    margin-top: 20px;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.textocentrado {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.textoizq {
+    text-align: left !important;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.form-check-label {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.bg-yellow {
+    background-color: #FFC805 !important;
+}
+
+.bg-black {
+    background-color: #000 !important;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFC805;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #818181;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.instagram {
+    width: 60px;
+    height: 60px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.ubic{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+.margena {
+    margin-top: 4rem !important;
+}
+
+.paddingt {
+    padding: 1.5rem !important;
+}
+
+.location-list .card {
+    border: none;
+}
+
+.location-card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.imgciudad {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 50px;
+
+}
+
+.input-group{
+    margin-top: 30px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem; 
+    font-family: 'Work Sans', sans-serif; 
+}
+
+.logo-img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.imgcontainer {
+    position: relative;
+}
+
+.ciudad {
+    font-family: "Work Sans", sans-serif;
+    position: absolute;
+    bottom: 110px;
+    left: 8vh;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
