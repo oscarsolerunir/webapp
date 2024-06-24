@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workable</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-yellow fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" onclick="toggleMenu()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="images/carga.png" alt="Logo de Workable" class="logo-img">
+                workable
+            </a>
+            
+            <div class="d-flex align-items-center">
+                <a href="#"><i class="bi bi-bell"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="sideMenu" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a href="home.html"><i class="bi bi-house"></i> Inicio</a>
+        <a href="carga.html"><i class="bi bi-search"></i> Buscar</a>
+        <a href="carga.html"><i class="bi bi-heart"></i> Favoritos</a>
+        <a href="carga.html"><i class="bi bi-person"></i> Perfil</a>
+        <a href="carga.html"><i class="bi bi-calendar"></i> Mis reservas</a>
+        <a href="carga.html"><i class="bi bi-bell"></i> Notificaciones</a>
+        <a href="carga.html"><i class="bi bi-question-circle"></i> Ayuda</a>
+    </div>
+
+    <div class="container margena paddingt">
+        <h1 class="ubic">Encuentra tu lugar de trabajo perfecto</h1>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Buscar coworking">
+            <button class="btn btn-outline-secondary" type="button"><i class="bi bi-search"></i></button>
+        </div>
+        <div class="row textocentrado mb-3">
+            <div class="col">
+                <div class="instagram mb-1"><i class="bi bi-eye"></i></div>
+                <span class="badge bg-light text-dark">Con vistas</span>
+            </div>
+            <div class="col">
+                <div class="instagram mb-1"><i class="bi bi-building"></i></div>
+                <span class="badge bg-light text-dark">Céntrico</span>
+            </div>
+            <div class="col">
+                <div class="instagram mb-1"><i class="bi bi-arrows-fullscreen"></i></div>
+                <span class="badge bg-light text-dark">Espacioso</span>
+            </div>
+            <div class="col">
+                <div class="instagram mb-1"><i class="bi bi-clock"></i></div>
+                <span class="badge bg-light text-dark">24 horas</span>
+            </div>
+        </div>
+        
+        <div class="row location-list">
+            <div class="col-6 mb-3">
+                <div class="card location-card">
+                    <img src="images/carrusel1.jpg" class="card-img-top" alt="Alicante Business World">
+                    <div class="card-body">
+                        <h5 class="card-title">Alicante, Business World</h5>
+                        <p class="card-text">Desde 12 €/hora</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 mb-3">
+                <div class="card location-card">
+                    <img src="images/carrusel2.jpg" class="card-img-top" alt="Calle del Prado">
+                    <div class="card-body">
+                        <h5 class="card-title">Calle del Prado</h5>
+                        <p class="card-text">Desde 25 €</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ubic g-2">
+            <div class="col-6">
+                <div class="imgcontainer">
+                    <img src="images/Madrid.jpg" class="img-fluid imgciudad" alt="Madrid">
+                    <div class="ciudad">Madrid</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="imgcontainer">
+                    <img src="images/Valencia.jpg" class="img-fluid imgciudad" alt="Valencia">
+                    <div class="ciudad">Valencia</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="imgcontainer">
+                    <img src="images/Barcelona.jpg" class="img-fluid imgciudad" alt="Barcelona">
+                    <div class="ciudad">Barcelona</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="imgcontainer">
+                    <img src="images/Sevilla.jpg" class="img-fluid imgciudad" alt="Sevilla">
+                    <div class="ciudad">Sevilla</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="imgcontainer">
+                    <img src="images/Coruña.jpg" class="img-fluid imgciudad" alt="A coruña">
+                    <div class="ciudad">A Coruña</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="imgcontainer">
+                    <img src="images/Valladolid.jpg" class="img-fluid imgciudad" alt="Valladolid">
+                    <div class="ciudad">Valladolid</div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <footer class="footer">
+                <div class="container-fluid textocentrado">
+                    <p>&copy; 2024 Workable. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="session.js"></script>
+</body>
+</html>
+
