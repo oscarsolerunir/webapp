@@ -197,7 +197,7 @@ body {
     background-color: #000;
     color: #fff;
     padding: 20px 0;
-    position: relative;
+    position: static;
     bottom: 0;
     width: 100%;
 }
@@ -206,4 +206,3 @@ body {
     margin: 0;
     font-size: 14px;
 }
-
