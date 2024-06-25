@@ -193,12 +193,26 @@ body {
 }
 
 .footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+    width: 100%; /* Asegura que el footer ocupe toda la anchura */
+    background-color: #000; /* Estilo del fondo para visibilidad */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    padding: 20px 0; /* Padding para dar espacio dentro del footer */
+    position: relative; /* Asegura que el footer tenga un posicionamiento relativo */
+    z-index: 1000; /* Aumenta el z-index para asegurar que esté por encima de otros elementos */
+    margin-left: 0; /* Asegura que no haya margen a la izquierda */
+    margin-right: 0; /* Asegura que no haya margen a la derecha */
+    padding-left: 0; /* Asegura que no haya padding a la izquierda */
+    padding-right: 0; /* Asegura que no haya padding a la derecha */
+}
+
+.container-principal {  /* Asegúrate de que este es el contenedor que envuelve todo, incluyendo el footer */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenedor principal ocupe al menos el alto de la ventana */
+    width: 100%; /* Asegura que ocupe toda la anchura disponible */
+    padding: 0; /* Elimina cualquier padding interno */
 }
 
 .footer p {
@@ -305,6 +319,10 @@ body {
     padding: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
+}
+
+#containerfavoritos {
+    margin-bottom: 40px;
 }
 
 .h2favoritos {
