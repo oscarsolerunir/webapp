@@ -9,8 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const coworkingElement = document.createElement('div')
       coworkingElement.innerHTML = `
         <div class="card">
-          <img src="${coworking.imagen}" alt="Coworking image">
-          <h2>${coworking.nombre}</h2>
+          <a href="ficha.html?id=${coworking.id}">
+            <img src="${coworking.imagen}" alt="${coworking.nombre}">
+            <h2>${coworking.nombre}</h2>
+          </a>
           <p>${coworking.descripcion}</p>
           <p>${coworking.localizacion.ciudad}</p>
           <p>${coworking.precio}</p>
