@@ -1,14 +1,228 @@
+:root {
+    --primary-color: #FFC805;
+    --background-color: #f8f9fa;
+    --text-color: #0F0F0F;
+    --quaternary-color: #6c757d;
+    --font-family: 'Work Sans', sans-serif;
+    --font-size-title-lg: 2.5rem;
+    --font-size-title-md: 2rem;
+    --font-size-title-sm: 1.5rem;
+    --font-size-title-xs: 1.2rem;
+    --font-size-body: 1rem;
+    --font-size-small: 0.8rem;
+    --font-weight-bold: 600;
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Work Sans', Arial, sans-serif; 
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-.container {
-    height: 100vh;
-    font-family: 'Work Sans', sans-serif;
+header, nav {
+    background-color: var(--primary-color);
 }
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: var(--font-size-small);
+}
+
+/* Navbar & Sidenav */
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-brand img {
+    width: 200px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFC805;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #818181;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Nav Logo */
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logout {
+    position: relative;
+}
+
+.logout-icon {
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Nav User */
+
+#user-email {
+    display: none;
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
+    position: absolute;
+    right: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    #user-email {
+        display: block;
+    }   
+    
+}
+
+/* Hero */
+
+.hero {
+    background-color: var(--primary-color);
+    padding: 6rem 1rem 2rem;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.hero__title h1 {
+    font-size: var(--font-size-title-lg);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+.hero__search {
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+/* Search */
+
+.form-control {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-family: var(--font-family);
+}
+
+.input-group-append button {
+    border-radius: 0 40px 40px 0;
+    padding: 12px 20px;
+    right: 0;
+    background-color: white;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-left: none;
+}
+
+/* Sections */
+
+section {
+    margin: 2rem ;
+}
+
+.section__title {
+    padding: 1rem 0 2rem 0;
+    text-align: center;
+}
+
+/* Categories */
+
+.category__icon {
+    width: 4rem;
+    height: 4rem;
+    font-size: var(--font-size-title-sm);
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.category__text {
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-bold);
+}
+
+/* City Cards */
+
+.city__card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city__image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.city__name {
+    position: absolute;
+    display: flex;
+    font-size: var(--font-size-title-sm);
+    color: white;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+/* Login */
 
 .login-card {
     width: 100%;
@@ -21,11 +235,6 @@ body {
     text-align: center;
 }
 
-.logo {
-    width: 200px;
-    height: auto;
-    margin-bottom: 20px;
-}
 
 .boton {
     border-radius: 25px;
@@ -70,149 +279,4 @@ body {
 .form-check-label {
     font-size: 14px;
     font-family: 'Work Sans', sans-serif;
-}
-
-body {
-    background-color: #f8f9fa;
-}
-
-.bg-yellow {
-    background-color: #FFC805 !important;
-}
-
-.bg-black {
-    background-color: #000 !important;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #FFC805;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #000;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #818181;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-}
-
-.instagram {
-    width: 60px;
-    height: 60px;
-    background-color: #e0e0e0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-
-.ubic{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-}
-.margena {
-    margin-top: 5rem !important;
-}
-
-.paddingt {
-    padding: 1.5rem !important;
-}
-
-.location-list .card {
-    border: none;
-}
-
-.location-card img {
-    height: 200px;
-    object-fit: cover;
-    width: 100%;
-}
-
-.imgciudad {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 50px;
-
-}
-
-.input-group{
-    margin-top: 30px;
-}
-
-
-.navbar-brand img {
-    width: 200px;
-    margin-left: 100px;
-}
-
-.logo-img {
-    width: 40px;
-    height: auto;
-    margin-right: 10px;
-}
-
-.imgcontainer {
-    position: relative;
-}
-
-.ciudad {
-    font-family: "Work Sans", sans-serif;
-    position: absolute;
-    bottom: 110px;
-    left: 8vh;
-    font-size: 20px;
-    color: #ffffff;
-    text-shadow: 2px 2px 3px #000000;
-}
-
-.footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
-    position: static;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer p {
-    margin: 0;
-    font-size: 14px;
-}
-
-.logout-icon {
-    font-size: 1.5rem;
-    color: black;
-}
-
-#user-email {
-    font-size: smaller;
-    font-weight: bold; 
 }

@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p>De lunes a viernes: ${coworking.horarios.lunes_viernes}</p>
           <p>Sábados: ${coworking.horarios.sabado}</p>
           <p>Domingos: ${coworking.horarios.domingo}</p>
-          <p>${coworking.servicios}</p>
+          <p>${coworking.servicios.join(', ')}</p>
         </div>
       `
       coworkingWrapper.appendChild(coworkingElement)
