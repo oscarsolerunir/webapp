@@ -21,6 +21,7 @@ body {
     font-size: var(--font-size-body);
     background-color: var(--background-color);
     color: var(--text-color);
+    min-height: 100vh;
 }
 
 header, nav {
@@ -260,12 +261,6 @@ section {
     color: #6c757d;
     font-size: 14px;
     margin-top: 20px;
-    font-family: 'Work Sans', sans-serif;
-
-}
-
-.textocentrado {
-    text-align: center;
     font-family: 'Work Sans', sans-serif;
 
 }

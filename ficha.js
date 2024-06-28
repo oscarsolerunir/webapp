@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('localizacion').textContent = coworking.localizacion.ciudad;
       document.getElementById('precio').textContent = coworking.precio;
       document.getElementById('horarios').textContent = `De lunes a viernes: ${coworking.horarios.lunes_viernes}, Sábados: ${coworking.horarios.sabado}, Domingos: ${coworking.horarios.domingo}`;
-      document.getElementById('servicios').textContent = coworking.servicios;
+      document.getElementById('servicios').textContent = coworking.servicios.join(', ');
     })
     .catch(error => console.error('Error fetching coworking:', error));
 });
