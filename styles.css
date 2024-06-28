@@ -40,6 +40,7 @@ footer {
     position: static;
     bottom: 0;
     width: 100%;
+    text-align: center;
 }
 
 footer p {
@@ -324,4 +325,166 @@ section {
 .form-check-label {
     font-size: 14px;
     font-family: 'Work Sans', sans-serif;
+}
+
+/*Perfil usuario CSS*/
+
+
+.Card-profile {
+    width: 90%;
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; 
+    background: #FFC805; 
+    padding: 16px; 
+}
+
+.imageprofile {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 50%;
+}
+
+.Card-profile-content {
+    text-align: center;
+    padding-top: 20px;
+    font-family:"Work Sans", sans-serif;
+}
+
+.Nombreapellidos {
+    font-size: 1.5em;
+    font-weight: bold; 
+    color: black; 
+    margin-bottom: 5px; 
+}
+
+.Profesion {
+    font-size: 1.2em;
+    color: black;
+}
+
+
+
+.Card-informationprofile {
+    background: #FFFFFF; 
+    border-radius: 20px; 
+    padding: 16px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.titleinformationprofile {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.info-title {
+    color: #333333;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.info-content {
+    color: #666666;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.btn-edit-profile {
+    background-color: #FFC805;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-edit-profile:hover {
+    background-color: #E6B700;
+    color: white;
+}
+
+
+/*listado favoritos perfil usuario*/
+
+#containerfavoritos , #containersoportepago {
+    height: auto;
+    background: #FFFFFF; 
+    border-radius: 20px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+#containerfavoritos {
+    margin-bottom: 40px;
+}
+
+.h2favoritos {
+    color: #333333;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.card-img-topfavoritos {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+.card-titlefavoritos , .card-titlesoportepago {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 10px;
+}
+
+.listadofavoritos {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.itemlistadofavoritos {
+    color: #666666;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+#cardfavorito , #soportepago {
+    background: #FFFFFF; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+#buttonfavoritos {
+    background-color: #FFC805; 
+    color: black;            
+    border: none;             
+    text-align: center;        
+    text-decoration: none;     
+    display: inline-block;     
+    margin-top: 12px;          
+    cursor: pointer;            
+    border-radius: 10px;        
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#buttonfavoritos:hover {
+    background-color: #E6B700;  
+    color: white;              
 }
