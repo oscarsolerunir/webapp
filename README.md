@@ -5,7 +5,7 @@
 
 - Persiste Session Storage y se puede realizar logout
 
-- Tanto el formulario de Login, Editar Perfil y ...., se valida los campos.
+- Tanto el formulario de Login, Editar Perfil y ...., se validan los campos.
 
 - Persiste el Local Storage en los formularios Editar Perfil y ...
 
