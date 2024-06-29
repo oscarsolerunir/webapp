@@ -49,8 +49,8 @@
           <div class="Card-profile">
             <img src="images/Fotoperfil.jpg" class="imageprofile" alt="Foto de perfil de usuario">
             <div class="Card-profile-content">
-                <h5 class="Nombreapellidos">Carlos Paularena Carballo</h5>
-                <p class="Profesion">Desarrollador Web FullStack</p>
+                <h5 class="Nombreapellidos" id="inputnombre">Carlos Paularena Carballo</h5>
+                <p class="Profesion" id="inputprofesion">Desarrollador Web FullStack</p>
             </div>
           </div>
       </div>
@@ -62,15 +62,15 @@
           <div class="row">
             <div class="col-6">
                 <h5 class="info-title">Sobre mí</h5>
-                <p class="info-content">Breve descripción personal...</p>
+                <p class="info-content" id="inputsobremi">Breve descripción personal...</p>
             </div>
             <div class="col-6">
                 <h5 class="info-title">Hobbies</h5>
-                <p class="info-content">Mis hobbies incluyen...</p>
+                <p class="info-content" id="inputhobbies">Mis hobbies incluyen...</p>
                 <h5 class="info-title">Idiomas</h5>
-                <p class="info-content">Inglés y Español</p>
+                <p class="info-content" id="inputidiomas">Inglés y Español</p>
                 <h5 class="info-title">Estudios</h5>
-                <p class="info-content">Grado en Ingeniería Informática</p>
+                <p class="info-content" id="inputestudios">Grado en Ingeniería Informática</p>
             </div>
           </div>
           <button class="btn-edit-profile" data-bs-toggle="modal" data-bs-target="#editProfileModal">Editar Perfil</button>
@@ -126,36 +126,35 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form>
+              <form id="formperfilusuario">
                 <div class="form-group">
-                  <label for="modal-nombre">Nombre</label>
-                  <input type="text" class="form-control" id="modal-nombre">
+                    <label for="modal-nombre">Nombre</label>
+                    <input type="text" class="form-control" id="modal-nombre">
                 </div>
                 <div class="form-group">
-                  <label for="modal-profesion">Profesión</label>
-                  <input type="text" class="form-control" id="modal-profesion">
+                    <label for="modal-profesion">Profesión</label>
+                    <input type="text" class="form-control" id="modal-profesion">
                 </div>
                 <div class="form-group">
-                  <label for="modal-sobre-mi">Sobre mí</label>
-                  <textarea class="form-control" id="modal-sobre-mi"></textarea>
+                    <label for="modal-sobre-mi">Sobre mí</label>
+                    <input type="text" class="form-control" id="modal-sobre-mi">
                 </div>
                 <div class="form-group">
-                  <label for="modal-hobbies">Hobbies</label>
-                  <textarea class="form-control" id="modal-hobbies"></textarea>
+                    <label for="modal-hobbies">Hobbies</label>
+                    <input type="text" class="form-control" id="modal-hobbies">
                 </div>
                 <div class="form-group">
-                  <label for="modal-idiomas">Idiomas</label>
-                  <textarea class="form-control" id="modal-idiomas"></textarea>
+                    <label for="modal-idiomas">Idiomas</label>
+                    <input type="text" class="form-control" id="modal-idiomas">
                 </div>
                 <div class="form-group">
-                  <label for="modal-estudios">Estudios</label>
-                  <textarea class="form-control" id="modal-estudios"></textarea>
+                    <label for="modal-estudios">Estudios</label>
+                    <input type="text" class="form-control" id="modal-estudios">
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary" id="saveChanges">Guardar Cambios</button>
                 </div>
               </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary" id="saveChanges">Guardar Cambios</button>
             </div>
           </div>
         </div>
@@ -176,24 +175,6 @@
   <script src="nav.js"></script>
   <script src="perfil.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-  $(document).ready(function(){
-      $('#saveChanges').click(function(){
-          // Actualizar nombre y profesión
-          $('.Nombreapellidos').text($('#modal-nombre').val());
-          $('.Profesion').text($('#modal-profesion').val());
-
-          // Actualizar información de cada sección
-          $('h5.info-title:contains("Sobre mí")').next('.info-content').text($('#modal-sobre-mi').val());
-          $('h5.info-title:contains("Hobbies")').next('.info-content').text($('#modal-hobbies').val());
-          $('h5.info-title:contains("Idiomas")').next('.info-content').text($('#modal-idiomas').val());
-          $('h5.info-title:contains("Estudios")').next('.info-content').text($('#modal-estudios').val());
-
-          // Cerrar el modal después de guardar los cambios
-          $('#editProfileModal').modal('hide');
-      });
-  });
-  </script>
 
 </body>
 </html>
