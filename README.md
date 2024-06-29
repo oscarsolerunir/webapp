@@ -5,8 +5,8 @@
 
 - Persiste Session Storage y se puede realizar logout
 
-- Tanto el formulario de Login, Editar Perfil y ...., se validan y son requeridos los campos.
+- Tanto el formulario de Login, Editar Perfil y Reserva, se validan y son requeridos los campos.
 
-- Persiste el Local Storage en los formularios Editar Perfil y ...
+- Persiste el Local Storage en los formularios Editar Perfil y Reserva Confirmada
 
 - Para acceder al formulario del perfil, se accede a través del botón "Editar Perfil".
