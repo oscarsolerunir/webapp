@@ -12,7 +12,6 @@
 
   <!-- Header -->
   <header>
-
     <!-- Navbar -->
     <nav class="navbar navbar-light fixed-top">
         <div class="container-fluid">
@@ -55,12 +54,11 @@
 
   <!-- Contenido -->
   <main class="container">
-      
     <!-- Ficha Coworking -->
     <section class="row coworking__details">
       <div class="section__title">
         <h1 id="nombre"></h1>
-        <a href="/listado.html">Volver al listado</a>
+        <a id="back-link" href="#">Volver a los detalles</a>
       </div>
       <div>
         <img id="imagen" src="" alt="" class="coworking__image">
@@ -72,10 +70,21 @@
           <p id="horarios"></p>
           <p id="servicios"></p>
         </div>
-        <button type="button" class="btn btn-primary" onclick="location.href='reserva.html?id=${id}'">Reservar</button>
       </div>
     </section>
 
+    <!-- Formulario de reserva -->
+     <div class="row">
+      <h2>Reservar coworking</h2>
+      <form>
+        <div class="form-group">
+          <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+          <select class="form-control">
+            <option>Default select</option>
+          </select>
+        </div>
+      </form>
+     </div>
   </main>
 
   <!-- Footer -->
@@ -91,4 +100,3 @@
   <script src="coworking.js"></script>
 </body>
 </html>
-
