@@ -40,51 +40,69 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="container-fluid hero">
-    <div class="hero__search">
-      <div class="input-group mb-3">
-        <input type="search" class="form-control" placeholder="Buscar coworking" aria-label="Buscar coworking" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button"><i class="bi bi-search"></i></button>
+  <!-- Contenido -->
+  <main class="container mt-5">
+
+    <!-- Formulario de reserva -->
+    <div class="row booking__form">
+      <h2>Reservar coworking</h2>
+      <form id="formreserva">
+        <div class="form-group mb-3">
+          <label for="start">Fecha de inicio</label>
+          <input type="date" id="start" name="trip-start" class="form-control" required />
+        </div>
+        <div class="form-group mb-3">
+          <label for="end">Fecha de fin</label>
+          <input type="date" id="end" name="trip-end" class="form-control" required />
+        </div>
+        <div class="form-group mb-3">
+          <label for="start-time">Hora de llegada</label>
+          <input type="time" id="start-time" name="start-time" class="form-control" required />
+        </div>
+        <div class="form-group mb-3">
+          <label for="end-time">Hora de salida</label>
+          <input type="time" id="end-time" name="end-time" class="form-control" required />
+        </div>
+        <div class="form-group mb-3">
+          <label for="num-personas">Número de personas</label>
+          <select id="num-personas" name="num-personas" class="form-control" required>
+            <option value="">Selecciona el número de personas</option>
+            <option value="1">1 persona</option>
+            <option value="2">2 personas</option>
+            <option value="3">3 personas</option>
+            <option value="4">4 personas</option>
+            <option value="5">5 personas</option>
+            <option value="6">6 personas</option>
+            <option value="7">7 personas</option>
+            <option value="8">8 personas</option>
+            <option value="9">9 personas</option>
+            <option value="10">10 personas</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservedConfirmedModal">Reservar</button>
+      </form>
+    </div>
+
+    <div class="modal fade" id="reservedConfirmedModal" tabindex="-1" aria-labelledby="reservedConfirmedLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="reservedConfirmedLabel">¡Reserva confirmada!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>¡Tu reserva ha sido confirmada! Puedes ver tus reservas en la sección de "Mis reservas".</p>
+            <p id="modal-start"></p>
+            <p id="modal-end"></p>
+            <p id="modal-start-time"></p>
+            <p id="modal-end-time"></p>
+            <p id="modal-num-personas"></p>
+            <button type="button" class="btn btn-primary" onclick="location.href='home.html'">Ir a la home</button>
+          </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Contenido -->
-  <main class="container">
-    <!-- Ficha Coworking -->
-    <section class="row coworking__details">
-      <div class="section__title">
-        <h1 id="nombre"></h1>
-        <a id="back-link" href="#">Volver a los detalles</a>
-      </div>
-      <div>
-        <img id="imagen" src="" alt="" class="coworking__image">
-        <div class="coworking__body">
-          <p id="descripcion" class="coworking__excerpt"></p>
-          <p>Este espacio de coworking ofrece un entorno de trabajo moderno y flexible, ideal para freelancers, emprendedores y pequeñas empresas. Ubicado en una zona estratégica, el coworking proporciona un ambiente profesional y colaborativo que fomenta la productividad y el networking. Equipado con escritorios compartidos, oficinas privadas, y salas de reuniones, este espacio satisface todas las necesidades laborales.</p>
-          <p id="direccion"></p>
-          <p id="precio" class="coworking__price"></p>
-          <p id="horarios"></p>
-          <p id="servicios"></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Formulario de reserva -->
-     <div class="row">
-      <h2>Reservar coworking</h2>
-      <form>
-        <div class="form-group">
-          <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
-          <select class="form-control">
-            <option>Default select</option>
-          </select>
-        </div>
-      </form>
-     </div>
   </main>
 
   <!-- Footer -->
@@ -97,6 +115,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   <script src="nav.js"></script>
-  <script src="coworking.js"></script>
+  <script src="reserva.js"></script>
 </body>
 </html>

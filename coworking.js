@@ -14,9 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('precio').textContent = `Desde ${coworking.precio}`;
         document.getElementById('horarios').textContent = `De lunes a viernes: ${coworking.horarios.lunes_viernes}, Sábados: ${coworking.horarios.sabado}, Domingos: ${coworking.horarios.domingo}`;
         document.getElementById('servicios').textContent = `Servicios: ${coworking.servicios.join(', ')}`;
-
-        const backLink = document.getElementById('back-link');
-        backLink.href = `ficha.html?id=${id}`;
       })
       .catch(error => console.error('Error fetching coworking:', error));
   } else {

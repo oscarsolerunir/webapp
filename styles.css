@@ -249,6 +249,16 @@ section {
     font-size: var(--font-size-title-xs);
     margin-bottom: 1.5rem;
 }
+
+/* Booking */
+
+.booking__form {
+    padding: 4rem;
+    margin: 4rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
 /* City Cards */
 
 .city__card {
